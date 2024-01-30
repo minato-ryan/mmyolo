@@ -8,7 +8,7 @@ import sys
 import warnings
 from setuptools import find_packages, setup
 
-from torch.utils.cpp_extension import BuildExtension
+# from torch.utils.cpp_extension import BuildExtension
 
 
 def readme():
@@ -187,5 +187,5 @@ if __name__ == '__main__':
             'mim': parse_requirements('requirements/mminstall.txt'),
         },
         ext_modules=[],
-        cmdclass={'build_ext': BuildExtension},
+        # cmdclass={'build_ext': BuildExtension},
         zip_safe=False)
